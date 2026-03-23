@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YapSauce Privacy Policy</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+            line-height: 1.6;
+            color: #e0e0e0;
+            background: #121212;
+        }
+        h1 { color: #bb86fc; }
+        h2 { color: #bb86fc; margin-top: 2rem; }
+        a { color: #bb86fc; }
+        strong { color: #ffffff; }
+        ul { padding-left: 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+        .updated { color: #888; font-size: 0.9rem; }
+    </style>
+</head>
+<body>
+    <h1>YapSauce Privacy Policy</h1>
+    <p class="updated">Last updated: March 23, 2026</p>
+
+    <h2>Overview</h2>
+    <p>YapSauce is a voice-to-text keyboard application that processes all data entirely on your device. We do not collect, store, transmit, or share any personal data.</p>
+
+    <h2>Data Collection</h2>
+    <p><strong>We do not collect any data.</strong> Specifically:</p>
+    <ul>
+        <li><strong>No audio data</strong> is recorded, stored, or transmitted beyond the immediate transcription session. Audio is processed in memory and discarded after transcription.</li>
+        <li><strong>No text data</strong> from your transcriptions is collected or transmitted.</li>
+        <li><strong>No usage analytics</strong> or telemetry are collected.</li>
+        <li><strong>No advertising identifiers</strong> are used.</li>
+        <li><strong>No cookies or tracking</strong> technologies are employed.</li>
+        <li><strong>No third-party services</strong> receive any data from this app.</li>
+    </ul>
+
+    <h2>On-Device Processing</h2>
+    <p>All speech recognition and text processing is performed locally on your device using on-device AI models:</p>
+    <ul>
+        <li><strong>Speech recognition</strong> is powered by whisper.cpp, running entirely on your device's CPU.</li>
+        <li><strong>Grammar correction</strong> is powered by llama.cpp, also running entirely on your device's CPU.</li>
+        <li><strong>No internet connection</strong> is required for any processing features.</li>
+    </ul>
+    <p>The only network activity occurs when you choose to download AI models from within the app. These downloads are fetched directly from Hugging Face (huggingface.co) model repositories.</p>
+
+    <h2>Permissions</h2>
+    <ul>
+        <li><strong>Microphone (RECORD_AUDIO):</strong> Required to capture your voice for transcription. Audio is processed in real-time and immediately discarded after transcription. No audio is stored or transmitted.</li>
+        <li><strong>Internet (INTERNET):</strong> Used only for downloading AI models. Not required for transcription.</li>
+        <li><strong>Foreground Service (FOREGROUND_SERVICE):</strong> Used for audio recording during voice input sessions.</li>
+    </ul>
+
+    <h2>Data Storage</h2>
+    <ul>
+        <li><strong>AI models</strong> are stored on your device's local storage. You can delete them at any time from within the app or by clearing app data.</li>
+        <li><strong>App preferences</strong> (theme selection, model choices, settings) are stored locally using Android's DataStore.</li>
+        <li><strong>Transcription history</strong> is stored locally on your device and can be cleared at any time.</li>
+    </ul>
+    <p>No data is stored on external servers.</p>
+
+    <h2>Third-Party Services</h2>
+    <p>YapSauce does not integrate with any third-party analytics, advertising, or data collection services. The app does not contain ads.</p>
+    <p>AI model files are hosted on <a href="https://huggingface.co">Hugging Face</a>. Model downloads are subject to Hugging Face's privacy policy. No personal data is sent to Hugging Face — only standard HTTP requests to download model files.</p>
+
+    <h2>Children's Privacy</h2>
+    <p>YapSauce does not knowingly collect any data from children or any other users. Since no data is collected from any user, no special provisions for children's data are necessary.</p>
+
+    <h2>Changes to This Policy</h2>
+    <p>If we update this privacy policy, we will post the new version at this URL and update the "Last updated" date above.</p>
+
+    <h2>Contact</h2>
+    <p>If you have questions about this privacy policy, please open an issue on <a href="https://github.com/oberonix/voice-keyboard-android">GitHub</a>.</p>
+
+    <h2>Open Source</h2>
+    <p>YapSauce is built using open-source components:</p>
+    <ul>
+        <li>whisper.cpp (MIT License) — <a href="https://github.com/ggerganov/whisper.cpp">GitHub</a></li>
+        <li>llama.cpp (MIT License) — <a href="https://github.com/ggerganov/llama.cpp">GitHub</a></li>
+        <li>SmolLM2 (Apache 2.0 License) — <a href="https://huggingface.co/HuggingFaceTB/SmolLM2-360M-Instruct">Hugging Face</a></li>
+    </ul>
+</body>
+</html>
